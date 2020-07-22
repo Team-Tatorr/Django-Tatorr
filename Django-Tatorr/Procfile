@@ -1,0 +1,1 @@
+echo 'web: gunicorn Django-Tatorr.wsgi --log-file -' > Procfile

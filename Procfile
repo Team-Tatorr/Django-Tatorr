@@ -1,1 +1,1 @@
-echo 'web: gunicorn Django-Tatorr.wsgi --log-file -' > Procfile
+web: gunicorn Django-Tatorr.wsgi —-log-file -

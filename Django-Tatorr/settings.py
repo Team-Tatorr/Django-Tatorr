@@ -21,16 +21,14 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: Environ variable for production - fallback for dev. Dev secret is never used in production.
-SECRET_KEY = os.environ.get('DJANGO-TATORR_SECRET_KEY', get_random_secret_key())
+SECRET_KEY = os.environ.get('DJANGO_TATORR_SECRET_KEY', get_random_secret_key())
 
 # SECURITY WARNING: don't run with debug turned on in production!
 # Check Heroku environment first, otherwise enabled debug
-if os.environ.get('DJANGO_DEBUG') is False:
-    DEBUG = os.environ.get('DJANGO_DEBUG')
+if os.environ.get('DJANGO_DEBUG') == "False":
+    DEBUG = False
 else:
     DEBUG = True
-
-
 # Set to Heroku to prevent HTTP Host header attacks
 ALLOWED_HOSTS = ['.herokuapp.com']
 

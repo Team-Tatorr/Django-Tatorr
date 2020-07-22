@@ -25,8 +25,7 @@ SECRET_KEY = os.environ.get('DJANGO_TATORR_SECRET_KEY', get_random_secret_key())
 
 # SECURITY WARNING: don't run with debug turned on in production!
 # Check Heroku environment first, otherwise enabled debug
-DEBUG = os.environ.get('DJANGO_DEBUG', True)
-
+DEBUG = bool(os.environ.get('DJANGO_DEBUG'))
 
 # Set to Heroku to prevent HTTP Host header attacks
 ALLOWED_HOSTS = ['.herokuapp.com']

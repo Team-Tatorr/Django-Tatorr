@@ -41,6 +41,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'movie_night.apps.MovieNightConfig',
+    'team_tator_main.apps.TeamTatorMainConfig',
 ]
 
 MIDDLEWARE = [

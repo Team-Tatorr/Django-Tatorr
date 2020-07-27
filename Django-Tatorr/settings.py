@@ -53,6 +53,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'Django-Tatorr.urls'
@@ -124,3 +125,12 @@ STATIC_URL = '/static/'
 
 # Activate Django-Heroku.
 django_heroku.settings(locals())
+# Set the static root directory
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+# Additional directories to find static files in
+# TODO figure out why the movie_night templates/css/ files don't show up when we {% load static %}
+# This may be because load static loads from the base file directory. since we extend base.html it only shows those
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "movie_night/templates/movie_night/css"),
+]

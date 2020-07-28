@@ -300,10 +300,18 @@ fabric.properties
 
 # pytype static type analyzer
 
-# End of https://www.toptal.com/developers/gitignore/api/django,pycharm,python
 
+#Random Additions
+/strava_app/migrations
+/movie_night/migrations/
+/team_tator_main/migrations/
+/staticfiles/
+
+
+# End of https://www.toptal.com/developers/gitignore/api/django,pycharm,python
 movie_night/migrations/
 
 staticfiles/
 
 team_tator_main/migrations/
+

@@ -3,5 +3,5 @@ from . import views
 
 urlpatterns = [
     # /strava_app/ index page
-    path('', views.index, name='index'),
+    path('', views.records, name='strava_records'),
 ]

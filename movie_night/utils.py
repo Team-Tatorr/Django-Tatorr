@@ -50,7 +50,7 @@ def create_cal():
             cal_string += outside_month
         else:
             # check for Event objects
-            events = Event.objects.filter(start_time__month=date.today().month, start_time__day=day_counter)
+            events = Event.objects.filter(start_day__month=date.today().month, start_day__day=day_counter)
             if events.count() > 0:
                 cal_string += '<li>'
                 cal_string += '<div class="' + 'date' + '">' + str(day_counter) + '</div>'

@@ -6,4 +6,4 @@ from .models import Event
 class MovieForm(ModelForm):
     class Meta:
         model = Event
-        fields = ['movie_name', 'start_time']
+        fields = ['movie_name', 'start_day', 'start_time']

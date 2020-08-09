@@ -309,9 +309,3 @@ fabric.properties
 
 
 # End of https://www.toptal.com/developers/gitignore/api/django,pycharm,python
-movie_night/migrations/
-
-staticfiles/
-
-team_tator_main/migrations/
-

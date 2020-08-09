@@ -48,5 +48,3 @@ def kudo_counter():
     for run in x:
         kudos_total = kudos_total + run["kudos_count"]
     return kudos_total
-
-print(kudo_counter())

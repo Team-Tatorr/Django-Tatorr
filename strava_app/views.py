@@ -1,5 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from strava_app.utils import *
 # Create your views here.
 def records(request):
-    return HttpResponse("Home Page for Strava Web App Stuff")
+
+    return render(request, "strava_app/base.html")

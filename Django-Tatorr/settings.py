@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'movie_night.apps.MovieNightConfig',
     'team_tator_main.apps.TeamTatorMainConfig',
+    'strava_app',
 ]
 
 MIDDLEWARE = [

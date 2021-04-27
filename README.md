@@ -1,5 +1,5 @@
 # Django-Tatorr
-
+<h1> This project is currenly inactive </h1>
 <h2>Project Structure</h2>
 
 <p>By default the Django template loader will look within each app for a <code>templates</code> folder. But to avoid namespace issues you <em>also</em> need to repeat the app name in a folder below that before adding your template file.</p>
